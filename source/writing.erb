@@ -1,0 +1,36 @@
+---
+pageable: true
+per_page: 20
+---
+<% if paginate && num_pages > 1 %>
+  <p>Page <%= page_number %> of <%= num_pages %></p>
+
+  <% if prev_page %>
+    <p><%= link_to 'Previous page', prev_page %></p>
+  <% end %>
+<% end %>
+
+<article>
+  <h1 class="text--center">I write about it.</h1>
+  <p>I write about music, the web, and the intersection of the two.</p>
+</article>
+
+<% if page_articles %>
+<section class="archive">
+  <h1 class="visuallyhidden">Archive</h1>
+  <ol>
+    <% page_articles.each_with_index do |article, i| %>
+      <li class="archive__post">
+          <h3 class="title"><%= link_to article.title, article %></h3>
+          <time datetime="<%= article.date.strftime('%Y-%m-%d') %>" class="date sc"><%= article.date.strftime('%b %e, %Y') %></time>
+      </li>
+    <% end %>
+  </ol>
+</section>
+<% end %>
+
+<% if paginate %>
+  <% if next_page %>
+    <p><%= link_to 'Next page', next_page %></p>
+  <% end %>
+<% end %>
