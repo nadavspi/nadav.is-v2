@@ -2,25 +2,25 @@
 
   <article class="post" role="main">
     <header class="post__header">
-      <h1><%= link_to current_article.title, current_article %></h1>
+      <h1><%= current_article.title %></h1>
       <time datetime="<%= current_article.date.strftime('%Y-%m-%d') %>" class="h4"><%= current_article.date.strftime('%B %e, %Y') %></time>
     </header>
     <%= yield %>
   </article>
-  
+
   <nav class="post__nav" role="navigation">
     <h1 class="visuallyhidden">Blog navigation</h1>
   <% if current_article.previous_article || current_article.next_article %>
 
-      <%= link_to "Next: #{current_article.next_article.title}", 
-          current_article.next_article, 
+      <%= link_to "Next: #{current_article.next_article.title}",
+          current_article.next_article,
           class: "post__next" if current_article.next_article %>
-      <%= link_to "Previous: #{current_article.previous_article.title}", 
-          current_article.previous_article, 
+      <%= link_to "Previous: #{current_article.previous_article.title}",
+          current_article.previous_article,
           class: "post__previous" if current_article.previous_article %>
 
   <% end %>
   <a href="/writing" class="archive">Archive</a>
   </nav>
 
-<% end %> 
+<% end %>
