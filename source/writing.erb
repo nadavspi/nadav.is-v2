@@ -11,8 +11,8 @@ per_page: 20
 <% end %>
 
 <article>
-  <h1 class="text--center">I write about it.</h1>
-  <p>I write about music, the web, and the intersection of the two.</p>
+  <h1>I write, sometimes.</h1>
+  <h2>I write about music, the web, and the intersection of the two.</h2>
 </article>
 
 <% if page_articles %>
@@ -21,12 +21,12 @@ per_page: 20
   <ol>
     <% page_articles.each_with_index do |article, i| %>
       <li class="archive__post">
-          <h3 class="title"><%= link_to article.title, article %></h3>
+          <%= link_to article.title, article %>
           <time datetime="<%= article.date.strftime('%Y-%m-%d') %>" class="date sc"><%= article.date.strftime('%b %e, %Y') %></time>
       </li>
     <% end %>
   </ol>
-</section>
+
 <% end %>
 
 <% if paginate %>

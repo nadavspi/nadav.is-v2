@@ -11,12 +11,12 @@ A running list of resources I consider valuable for being a responsible, well-ro
 * Workflow: http://nvie.com/posts/a-successful-git-branching-model/
 * Workflow tool: https://github.com/nvie/gitflow
 
-## HTML
+## <abbr>HTML</abbr>
 * http://diveintohtml5.info/semantics.html
 * http://html5doctor.com/lets-talk-about-semantics/
 * http://diveintohtml5.info/forms.html
 
-## CSS
+## <abbr>CSS</abbr>
 * http://learnlayout.com/
 * http://adamschwartz.co/magic-of-css/
 * http://modernweb.com/2013/08/12/writing-better-css/

@@ -1,0 +1,73 @@
+.notice {
+  @extend %content-container;
+  padding: ms(-2);
+  font-style: italic;
+  border: 4px solid $green;
+  border-radius: ms(-3);
+
+  @media (min-width: 50em) {
+    border-width: 8px;
+  }
+}
+
+.post {
+  &__nav {
+    margin-top: ms(5);
+    margin-bottom: 0;
+    font-size: ms(-1);
+    a {
+      & + a {
+        margin-left: ms(-2);
+      }
+    }
+  }
+}
+
+.fitvids {
+  @media (min-width: 70em) {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}
+
+.archive {
+  font-size: ms(1);
+
+  ol {
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li {
+    margin-bottom: ms(0);
+  }
+}
+
+.featured {
+  @extend %clearfix;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+figure {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  @extend %content-container;
+  text-align: center;
+
+  figcaption {
+    color: $slate;
+
+    @media (min-width: 40em) {
+      font-size: .8rem;
+    }
+  }
+}
+
+time {
+  display: block;
+
+  @media (min-width: 40em) {
+    font-size: .8rem;
+  }
+}
