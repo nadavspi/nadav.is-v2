@@ -14,7 +14,8 @@
   <body>
       <a href="#main" class="skip-link visuallyhidden focusable">Skip to main content</a></li>
       <aside class="home-link"><a href="/" tabindex="-1">Home</a></aside>
-      <nav role="navigation">
+      <button type="button" aria-controls="navigation">Navigation</button>
+      <nav id="navigation" role="navigation" aria-expanded="false" tabindex="-1">
           <h1 class="visuallyhidden">Site navigation</h1>
           <ul>
               <li><%= nav_link "About", "/" %></li>
