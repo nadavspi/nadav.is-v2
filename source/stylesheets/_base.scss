@@ -3,18 +3,15 @@
 }
 
 html {
-  // padding-left: ms(1);
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.4;
-  border-left: ms(1) solid $red;
-  // background-color: $red;
+  border-left: ms(-2) solid $red;
 
   @include bp($rare) {
     font-size: 26px;
   }
 
   @include bp($medium) {
-    // padding-left: ms(4);
     border-width: ms(4);
   }
 
@@ -33,7 +30,7 @@ body {
   min-height: 100vh;
   max-width: 44rem;
   margin: 0;
-  padding: ms(3) ms(3) 1rem ms(2);
+  padding: ms(3) ms(3) 1rem ms(1);
 
   font-family: "Farnham Text", Georgia, serif;
   color: $brown;
@@ -108,7 +105,7 @@ h4 {
 h1 {
   margin: 0;
   margin-bottom: ms(-1);
-  font-size: ms(4);
+  font-size: ms(3);
   line-height: 1;
 
   @include bp($medium) {
