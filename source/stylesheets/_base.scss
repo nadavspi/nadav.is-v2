@@ -9,21 +9,21 @@ html {
   border-left: ms(1) solid $red;
   // background-color: $red;
 
-  @media (min-width: 40em) {
+  @include bp($rare) {
     font-size: 26px;
   }
 
-  @media (min-width: 50em) {
+  @include bp($medium) {
     // padding-left: ms(4);
     border-width: ms(4);
   }
 
-  @media (min-width: 70em) {
+  @include bp($well) {
     font-size: 30px;
     line-height: 1.55;
   }
 
-  @media (min-width: 100em) {
+  @include bp($well-done) {
     font-size: 34px;
     line-height: 1.6;
   }
@@ -39,13 +39,13 @@ body {
   color: $brown;
   background-color: #fff;
 
-  @media (min-width: 50em) {
+  @include bp($medium) {
     padding-top: ms(4);
     padding-left: ms(5);
     padding-right: ms(5);
   }
 
-  @media (min-width: 100em) {
+  @include bp($well-done) {
     padding-left: ms(6);
     padding-right: 0;
   }
@@ -56,7 +56,7 @@ main {
   clear: both;
   @extend %content-container;
 
-  @media (min-width: 50em) {
+  @include bp($medium) {
     clear: none;
   }
 }
@@ -76,7 +76,7 @@ a {
   border-bottom: 2px solid;
   transition: color .2s;
 
-  @media (min-width: 50em) {
+  @include bp($medium) {
     border-bottom-width: 3px;
   }
 
@@ -111,7 +111,7 @@ h1 {
   font-size: ms(4);
   line-height: 1;
 
-  @media (min-width: 50em) {
+  @include bp($medium) {
     margin-bottom: ms(-4);
   }
 }
@@ -195,7 +195,7 @@ nav {
   // text-align: right;
   font-style: italic;
 
-  @media (min-width: 50em) {
+  @include bp($medium) {
     text-align: right;
   }
 
@@ -205,7 +205,7 @@ nav {
     list-style-type: none;
     column-count: 4;
 
-    @media (min-width: 50em) {
+    @include bp($medium) {
       column-count: 1;
     }
   }
@@ -230,7 +230,7 @@ nav {
   opacity: 0;
   transition: opacity .5s;
 
-  @media (min-width: 50em) {
+  @include bp($medium) {
     display: block;
   }
 
@@ -243,7 +243,7 @@ nav {
 }
 
 .half {
-  @media (min-width: 50em) {
+  @include bp($medium) {
     width: 48%;
     float: left;
 
