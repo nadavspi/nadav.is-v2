@@ -2,6 +2,7 @@
 $ms-base: 1rem 2.6rem;
 $ms-ratio: $golden;
 // @debug ms-list(-10, 10, $ms-base, $ms-ratio);
+$border-radius: ms(-3);
 
 // Colors
 $brown: darken(#522D06, 8%);
