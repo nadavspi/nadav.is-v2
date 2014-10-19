@@ -192,14 +192,15 @@ blockquote {
 
 nav {
   display: none;
-  margin-left: ms(2);
-  margin-bottom: ms(1);
-  float: right;
-  text-align: right;
+  margin-bottom: 1rem;
   font-style: italic;
 
   @include bp($medium) {
     display: block;
+    margin-left: ms(2);
+    margin-bottom: ms(1);
+    float: right;
+    text-align: right;
   }
 
   ul {
@@ -216,6 +217,10 @@ nav {
   .active {
     color: $green;
   }
+}
+
+[aria-expanded="true"] {
+  display: block;
 }
 
 button[aria-controls="navigation"] {
