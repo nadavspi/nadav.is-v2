@@ -12,12 +12,13 @@ html {
   }
 
   @include bp($medium) {
-    border-width: ms(4);
+    border-width: ms(2);
   }
 
   @include bp($well) {
     font-size: 30px;
     line-height: 1.55;
+    border-width: ms(4);
   }
 
   @include bp($well-done) {
@@ -37,6 +38,10 @@ body {
   background-color: #fff;
 
   @include bp($medium) {
+    padding-left: ms(3);
+  }
+
+  @include bp($well) {
     padding-top: ms(4);
     padding-left: ms(5);
     padding-right: ms(5);
@@ -90,7 +95,7 @@ a {
 }
 
 p {
-  margin-top: ms(0);
+  margin-top: ms(1);
   margin-bottom: ms(0);
 }
 
