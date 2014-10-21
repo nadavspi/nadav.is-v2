@@ -5,13 +5,14 @@ blog: reading
 <h1>Reading List</h1>
 
 <% if page_articles %>
-<section class="archive">
+<section class="reading-list">
   <h1 class="visuallyhidden">Archive</h1>
   <ol>
     <% page_articles.each_with_index do |article, i| %>
-      <li class="archive__post">
-          <%= link_to article.title, article %>
-          <time datetime="<%= article.date.strftime('%Y-%m-%d') %>" class="date sc"><%= article.date.strftime('%b %e, %Y') %></time>
+      <li>
+          <% link_to article do %>
+              <img src="<%= article.data.cover %>" alt="<%= article.title %>">
+          <% end %>
       </li>
     <% end %>
   </ol>

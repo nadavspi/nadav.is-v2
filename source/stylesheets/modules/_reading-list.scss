@@ -1,0 +1,80 @@
+.reading-list {
+  ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    @include bp($well) {
+      width: 20%;
+    }
+  }
+
+  a {
+    border-bottom: 0;
+  }
+}
+
+.book {
+  margin-top: 0;
+
+  &__header {
+    @extend %clearfix;
+
+    figure {
+      float: left;
+      margin-top: 0;
+      margin-left: 0;
+      text-align: left;
+    }
+
+    > div {
+      float: left;
+      color: $slate;
+    }
+
+    dl {
+      line-height: 1.2;
+    }
+
+    dt {
+      @extend .sc;
+      font-size: .7rem;
+      text-transform: lowercase;
+      color: rgba($slate, .5);
+    }
+
+    dd {
+      margin-left: 0;
+      margin-bottom: 1rem;
+      font-style: italic;
+      // don't use old school numberals, use discretionary ligatures
+      font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 0, "dlig" 1;
+    }
+
+    a {
+      border-bottom: 0;
+    }
+  }
+
+  h3 {
+    margin-bottom: 1rem;
+  }
+
+  blockquote {
+    position: relative;
+    margin-top: ms(3);
+    margin-left: ms(3);
+    color: inherit;
+
+    &::before {
+      position: absolute;
+      top: -.25em;
+      left: -.5em;
+      content: '\201c';
+      font-size: ms(1);
+      color: rgba($green, .5);
+    }
+  }
+}

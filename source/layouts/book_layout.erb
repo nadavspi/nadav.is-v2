@@ -1,0 +1,41 @@
+<% wrap_layout :layout do %>
+
+  <section class="book">
+    <header class="book__header">
+        <figure>
+            <img src="<%= current_article.data.cover %>" alt="">
+        </figure>
+        <div>
+            <h1><%= current_article.title %></h1>
+
+            <dl>
+                <dt>Author</dt>
+                <dd><%= current_article.data.author %></dd>
+
+                <dt>Year of Publication</dt>
+                <dd><%= current_article.data.year %></dd>
+
+                <dt>My Rating</dt>
+                <dd><%= current_article.data.rating %></dd>
+
+                <dt>Buy the book</dt>
+                <dd><a href="<%= current_article.data.link %>">Amazon</a></dd>
+            </dl>
+        </div>
+    </header>
+    <article><%= yield %></article>
+  </section>
+
+  <nav class="post__nav">
+    <h1 class="visuallyhidden">Blog navigation</h1>
+  <% if current_article.previous_article || current_article.next_article %>
+      <%= link_to "Previous: #{current_article.previous_article.title}",
+          current_article.previous_article,
+          class: "post__nav__previous" if current_article.previous_article %>
+      <%= link_to "Next: #{current_article.next_article.title}",
+          current_article.next_article,
+          class: "post__nav__next" if current_article.next_article %>
+  <% end %>
+  </nav>
+
+<% end %>
