@@ -18,6 +18,7 @@ activate :directory_indexes
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
+  blog.name = "writing"
   blog.prefix = "writing"
   blog.permalink = "{title}.html"
   # Matcher for blog source files
@@ -38,6 +39,14 @@ activate :blog do |blog|
   # blog.paginate = true
   # blog.per_page = 10
   # blog.page_link = "page/{num}"
+end
+
+activate :blog do |blog|
+  blog.name = "reading"
+  blog.prefix = "reading"
+  blog.permalink = "{title}.html"
+  blog.sources = "{title}.html"
+  blog.layout = "article_layout"
 end
 
 configure :development do
