@@ -31,7 +31,7 @@ body {
   min-height: 100vh;
   max-width: 44rem;
   margin: 0;
-  padding: ms(3) ms(3) 1rem ms(1);
+  padding: 1rem ms(3) 1rem ms(1);
 
   font-family: "Farnham Text", Georgia, serif;
   color: $brown;
@@ -51,6 +51,15 @@ body {
     padding-left: ms(6);
     padding-right: 0;
   }
+}
+
+button {
+  margin: 0;
+  font-family: inherit;
+  font-size: 100%;
+  background: none;
+  border: 0;
+  outline: 0;
 }
 
 main {
@@ -194,6 +203,7 @@ nav {
   display: none;
   margin-bottom: 1rem;
   font-style: italic;
+  clear: both;
 
   @include bp($medium) {
     display: block;
@@ -211,11 +221,19 @@ nav {
 
   a {
     display: inline-block;
-    margin-bottom: ms(-2);
+    margin-bottom: 1em;
+
+    @include bp($medium) {
+      margin-bottom: ms(-2);
+    }
   }
 
   .active {
     color: $green;
+  }
+
+  &:focus {
+    outline: 0;
   }
 }
 
@@ -224,9 +242,23 @@ nav {
 }
 
 button[aria-controls="navigation"] {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
+  display: flex;
+  align-items: center;
+  float: right;
+  margin: 1rem 0;
+
+  &::after {
+    content: "▼";
+    margin-left: .2em;
+    font-size: .7em;
+  }
+
+  &.is-expanded {
+    &::after {
+      display: inline-block;
+      transform: rotate(180deg);
+    }
+  }
 
   @include bp($medium) {
     display: none;
