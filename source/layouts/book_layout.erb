@@ -2,18 +2,18 @@
 
   <section class="book">
     <header class="book__header">
-        <figure>
-            <img src="<%= current_article.data.cover %>" alt="">
-        </figure>
         <div>
-            <h1><%= current_article.title %></h1>
+            <h2><%= current_article.title %></h2>
 
             <dl>
                 <dt>Author</dt>
                 <dd><%= current_article.data.author %></dd>
 
                 <dt>Year of Publication</dt>
-                <dd><%= current_article.data.year %></dd>
+                <dd><%= current_article.data.publication %></dd>
+
+                <dt>When I read it</dt>
+                <dd><%= current_article.data.reading %></dd>
 
                 <dt>My Rating</dt>
                 <dd><%= current_article.data.rating %></dd>
@@ -22,8 +22,22 @@
                 <dd><a href="<%= current_article.data.link %>">Amazon</a></dd>
             </dl>
         </div>
+        <figure>
+            <picture>
+                <source srcset="<%= current_article.data.cover %>" media="(min-width: 40em)" alt="">
+                <img srcset="" alt="">
+            </picture>
+        </figure>
     </header>
-    <article><%= yield %></article>
+
+    <% if current_article.data.highlights %>
+        <article>
+            <h2>Choice Highlights</h2>
+            <% current_article.data.highlights.each do |h| %>
+                <blockquote><%= h %></blockquote>
+            <% end %>
+        </article>
+    <% end %>
   </section>
 
   <nav class="post__nav">
