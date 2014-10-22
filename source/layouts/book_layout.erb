@@ -13,7 +13,7 @@
                 <dt>When I read it</dt>
                 <dd><%= current_article.data.reading %></dd>
 
-                <dt>My Rating</dt>
+                <dt>What I thought</dt>
                 <dd><%= current_article.data.rating %></dd>
 
                 <dt>Buy the book</dt>
@@ -40,12 +40,12 @@
   <nav class="post__nav">
     <h1 class="visuallyhidden">Blog navigation</h1>
   <% if current_article.previous_article || current_article.next_article %>
-      <%= link_to "Previous: #{current_article.previous_article.title}",
-          current_article.previous_article,
-          class: "post__nav__previous" if current_article.previous_article %>
       <%= link_to "Next: #{current_article.next_article.title}",
           current_article.next_article,
           class: "post__nav__next" if current_article.next_article %>
+      <%= link_to "Previous: #{current_article.previous_article.title}",
+          current_article.previous_article,
+          class: "post__nav__previous" if current_article.previous_article %>
   <% end %>
   </nav>
 
