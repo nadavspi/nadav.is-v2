@@ -9,6 +9,7 @@ html {
 
   @include bp($rare) {
     font-size: 26px;
+    line-height: 1.55;
   }
 
   @include bp($medium) {
@@ -16,8 +17,8 @@ html {
   }
 
   @include bp($well) {
-    font-size: 30px;
-    line-height: 1.55;
+  //   font-size: 30px;
+  //   line-height: 1.55;
     border-width: ms(4);
   }
 
@@ -29,9 +30,9 @@ html {
 
 body {
   min-height: 100vh;
-  max-width: 44rem;
+  max-width: 40rem;
   margin: 0;
-  padding: 1rem ms(3) 1rem ms(1);
+  margin: 1rem ms(3) 1rem ms(1);
 
   font-family: Georgia, serif;
   color: $brown;
@@ -42,18 +43,18 @@ body {
   }
 
   @include bp($medium) {
-    padding-left: ms(3);
+    margin-left: ms(3);
   }
 
   @include bp($well) {
-    padding-top: ms(4);
-    padding-left: ms(5);
-    padding-right: ms(5);
+    margin-top: ms(4);
+    margin-left: ms(6);
+    margin-right: ms(5);
   }
 
   @include bp($well-done) {
-    padding-left: ms(6);
-    padding-right: 0;
+    margin-left: ms(6);
+    margin-right: 0;
   }
 }
 
