@@ -171,10 +171,15 @@ h4,
 
 hr {
   width: 80%;
-  margin-top: ms(5);
-  margin-bottom: ms(5);
+  margin-top: ms(4);
+  margin-bottom: ms(4);
   border: 0;
   border-bottom: 4px solid $green;
+
+  @include bp($well) {
+    margin-top: ms(5);
+    margin-bottom: ms(5);
+  }
 }
 
 section {
