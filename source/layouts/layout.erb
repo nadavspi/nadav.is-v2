@@ -8,21 +8,8 @@
     <title><%= current_page.data.title + " | " if current_page.data.title %> Nadav Spiegelman</title>
 
     <%= stylesheet_link_tag "styles" %>
-    <script type="text/javascript">
-     WebFontConfig = {
-         custom: { families: [ 'Farnham Text:bold,regular,italic' ],
-                   urls: [ '//cloud.webtype.com/css/2a4469a7-871b-419c-9999-be1ef734d079.css' ]},
-         timeout: 2000
-     };
-     (function() {
-         var wf = document.createElement('script');
-         wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-                               '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-         wf.type = 'text/javascript';
-         wf.async = 'true';
-         var s = document.getElementsByTagName('script')[0];
-         s.parentNode.insertBefore(wf, s);
-     })();
+    <script>
+     !function(){"use strict";function b(a,b,c){a.addEventListener?a.addEventListener(b,c,!1):a.attachEvent&&a.attachEvent("on"+b,c)}function c(a){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===a}function d(){if(window.localStorage&&window.XMLHttpRequest)if(c(a))e(localStorage.font_css_cache);else{var d=new XMLHttpRequest;d.open("GET",a,!0),d.onreadystatechange=function(){4===d.readyState&&(e(d.responseText),localStorage.font_css_cache=d.responseText,localStorage.font_css_cache_file=a)},d.send()}else{var b=document.createElement("link");b.href=a,b.rel="stylesheet",b.type="text/css",document.getElementsByTagName("head")[0].appendChild(b),document.cookie="font_css_cache"}}function e(a){var b=document.createElement("style");b.setAttribute("type","text/css"),b.styleSheet?b.styleSheet.cssText=a:b.innerHTML=a,document.getElementsByTagName("head")[0].appendChild(b)}var a="//cloud.webtype.com/css/2a4469a7-871b-419c-9999-be1ef734d079.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?d():b(window,"load",d)}();
     </script>
   </head>
 

@@ -16,16 +16,16 @@ html {
     border-width: ms(2);
   }
 
-  @include bp($well) {
-  //   font-size: 30px;
-  //   line-height: 1.55;
+  @include bp($well-done) {
+    font-size: 30px;
+    line-height: 1.55;
     border-width: ms(4);
   }
 
-  @include bp($well-done) {
-    font-size: 34px;
-    line-height: 1.6;
-  }
+  // @include bp($well-done) {
+  //   font-size: 34px;
+  //   line-height: 1.6;
+  // }
 }
 
 body {
@@ -34,13 +34,9 @@ body {
   margin: 0;
   margin: 1rem ms(3) 1rem ms(1);
 
-  font-family: Georgia, serif;
+  font-family: "Farnham Text", Georgia, serif;
   color: $brown;
   background-color: #fff;
-
-  .wf-active & {
-    font-family: "Farnham Text", Georgia, serif;
-  }
 
   @include bp($medium) {
     margin-left: ms(3);
