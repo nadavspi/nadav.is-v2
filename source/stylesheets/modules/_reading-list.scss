@@ -1,5 +1,8 @@
 .reading-list {
   ol {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -8,6 +11,8 @@
   li {
     @include bp($well) {
       width: 20%;
+      float: left;
+      margin-right: 1rem;
     }
   }
 
@@ -20,18 +25,42 @@
   margin-top: 0;
 
   &__header {
-    @extend %clearfix;
+    &::after {
+      content: '';
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      @extend hr;
 
-    figure {
-      float: left;
-      margin-top: 0;
-      margin-left: 0;
-      text-align: left;
+      @include bp($well) {
+        display: none;
+      }
     }
 
-    > div {
-      float: left;
+    @include bp($well) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    figure {
+      display: none;
+
+      @include bp($well) {
+        display: block;
+        flex: 1;
+        margin: 0;
+        margin-left: ms(1);
+        text-align: left;
+      }
+    }
+
+    > dl {
       color: $slate;
+
+      @include bp($well) {
+        flex: 2;
+      }
     }
 
     dl {
