@@ -33,9 +33,13 @@ body {
   margin: 0;
   padding: 1rem ms(3) 1rem ms(1);
 
-  font-family: "Farnham Text", Georgia, serif;
+  font-family: Georgia, serif;
   color: $brown;
   background-color: #fff;
+
+  .wf-active & {
+    font-family: "Farnham Text", Georgia, serif;
+  }
 
   @include bp($medium) {
     padding-left: ms(3);
@@ -52,6 +56,7 @@ body {
     padding-right: 0;
   }
 }
+
 
 button {
   margin: 0;

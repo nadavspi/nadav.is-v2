@@ -8,7 +8,22 @@
     <title><%= current_page.data.title + " | " if current_page.data.title %> Nadav Spiegelman</title>
 
     <%= stylesheet_link_tag "styles" %>
-    <link href="//cloud.webtype.com/css/2a4469a7-871b-419c-9999-be1ef734d079.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+     WebFontConfig = {
+         custom: { families: [ 'Farnham Text:bold,regular,italic' ],
+                   urls: [ '//cloud.webtype.com/css/2a4469a7-871b-419c-9999-be1ef734d079.css' ]},
+         timeout: 2000
+     };
+     (function() {
+         var wf = document.createElement('script');
+         wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                               '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+         wf.type = 'text/javascript';
+         wf.async = 'true';
+         var s = document.getElementsByTagName('script')[0];
+         s.parentNode.insertBefore(wf, s);
+     })();
+    </script>
   </head>
 
   <body>
