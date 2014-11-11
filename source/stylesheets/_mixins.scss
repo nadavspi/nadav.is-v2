@@ -3,3 +3,22 @@
     @content;
   }
 }
+
+@mixin farnham {
+  font-family: "Farnham Text", Georgia;
+}
+
+@mixin farnham-display {
+  font-family: "Farnham Display", Georgia;
+  font-style: normal;
+  font-weight: bold;
+}
+
+@mixin whitney {
+  font-family: 'Whitney SSm A', 'Whitney SSm B';
+}
+
+@mixin whitney-sc {
+  font-family: 'Whitney SSm Small Caps A', 'Whitney SSm Small Caps B';
+  font-weight: 500;
+}

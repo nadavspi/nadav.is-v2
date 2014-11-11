@@ -3,7 +3,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.4;
   border-left: ms(-2) solid $red;
 
@@ -17,8 +17,8 @@ html {
   }
 
   @include bp($well-done) {
-    font-size: 30px;
-    line-height: 1.55;
+    font-size: 32px;
+    line-height: 1.5;
     border-width: ms(4);
   }
 
@@ -34,7 +34,7 @@ body {
   margin: 0;
   margin: 1rem ms(3) 1rem ms(1);
 
-  font-family: "Farnham Text", Georgia, serif;
+  @include farnham;
   color: $brown;
   background-color: #fff;
 
@@ -65,7 +65,6 @@ button {
 }
 
 main {
-  max-width: ms(15);
   clear: both;
   @extend %content-container;
 
@@ -125,6 +124,7 @@ h1,
 %h1 {
   margin: 0;
   margin-bottom: ms(-1);
+  @include farnham-display;
   font-size: ms(3);
   line-height: 1;
 
@@ -143,13 +143,16 @@ h2,
 
   h1 + & {
     margin-top: 0;
+    //   @include whitney;
+    //   font-size: 1.3rem;
+    //   font-weight: 600;
   }
 }
 
 h3,
 %h3 {
   margin-bottom: 0;
-  font-size: ms(0);
+  font-size: 1.25rem;
   line-height: 1.2;
   font-weight: normal;
   font-style: italic;
@@ -189,7 +192,7 @@ section {
 }
 
 %content-container {
-  max-width: ms(14);
+  max-width: ms(13);
 }
 
 
@@ -197,6 +200,7 @@ blockquote {
   max-width: 30em;
   margin-left: auto;
   margin-right: auto;
+  @include whitney;
   font-size: .8rem;
   line-height: 1.4;
   color: $slate;

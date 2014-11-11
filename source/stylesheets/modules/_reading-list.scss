@@ -75,10 +75,10 @@
     }
 
     dt {
-      @extend .sc;
+      @include whitney-sc;
       font-size: .7rem;
       text-transform: lowercase;
-      color: rgba($slate, .5);
+      color: rgba($slate, .6);
     }
 
     dd {
@@ -105,6 +105,7 @@
     color: inherit;
 
     &::before {
+      @include farnham;
       position: absolute;
       top: -.25em;
       left: -.5em;

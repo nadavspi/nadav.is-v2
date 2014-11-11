@@ -21,6 +21,12 @@
       }
     }
   }
+
+  &__header {
+    h1 {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .fitvids {
@@ -39,7 +45,7 @@
   }
 
   li {
-    margin-bottom: ms(0);
+    margin-bottom: ms(1);
   }
 }
 
@@ -54,20 +60,29 @@ figure {
   margin-bottom: 1rem;
   @extend %content-container;
   text-align: center;
+}
 
-  figcaption {
-    color: $slate;
+figcaption {
+  @include whitney;
+  color: $slate;
 
-    @media (min-width: 40em) {
-      font-size: .8rem;
-    }
+  @media (min-width: 40em) {
+    font-size: .8rem;
   }
 }
 
 time {
   display: block;
+  margin-top: .25em;
+  @include whitney-sc;
+  font-size: .9rem;
 
   @media (min-width: 40em) {
-    font-size: .7rem;
+    margin-top: 0;
   }
+}
+
+.footnotes {
+  @include whitney;
+  font-size: .9em;
 }
