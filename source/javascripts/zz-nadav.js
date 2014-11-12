@@ -2,22 +2,22 @@ window.onload = function() {
     fitVids('.fitvids');
 }
 
-Zepto(function($) {
+(function() {
+    var nav = document.getElementById('navigation');
 
-    var $nav = $("#navigation");
-
-    $('button[aria-controls="navigation"]').on('click', function() {
-        $(this).toggleClass('is-expanded');
-
-        if ($nav.attr('aria-expanded') == 'false') {
-            $nav.attr('aria-expanded', true).focus();
-        } else {
-            $nav.attr('aria-expanded', false);
-        }
-    });
+    document.querySelector('button[aria-controls="navigation"]')
+        .addEventListener('click', function(e) {
+            if (nav.getAttribute('aria-expanded') == 'false') {
+                nav.setAttribute('aria-expanded', true);
+                nav.focus();
+            } else {
+                nav.setAttribute('aria-expanded', false);
+            }
+        }, false);
 
     if (window.outerWidth >= 800) {
-        $nav.attr('aria-expanded', true).attr('tabindex', 1);
+        nav.setAttribute('aria-expanded', true);
+        nav.setAttribute('tabindex', 1);
     }
 
-});
+}());
