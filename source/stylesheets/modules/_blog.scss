@@ -1,12 +1,13 @@
 .notice {
   @extend %content-container;
   padding: ms(-2);
-  font-style: italic;
+  @include whitney;
+  font-size: .7rem;
   border: 4px solid $green;
   border-radius: $border-radius;
 
   @media (min-width: 50em) {
-    border-width: 8px;
+    border-width: 6px;
   }
 }
 
@@ -85,5 +86,5 @@ time {
 
 .footnotes {
   @include whitney;
-  font-size: .9em;
+  font-size: .7em;
 }
