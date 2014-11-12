@@ -179,7 +179,7 @@ hr {
   margin-top: ms(4);
   margin-bottom: ms(4);
   border: 0;
-  border-bottom: 4px solid $green;
+  border-bottom: 6px solid $green;
 
   @include bp($well) {
     margin-top: ms(5);
