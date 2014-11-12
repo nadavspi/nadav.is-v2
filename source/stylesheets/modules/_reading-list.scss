@@ -78,7 +78,7 @@
       @include whitney-sc;
       font-size: .7rem;
       text-transform: lowercase;
-      color: rgba($slate, .6);
+      color: $slate-light;
     }
 
     dd {
@@ -111,7 +111,7 @@
       left: -.5em;
       content: '\201c';
       font-size: ms(1);
-      color: rgba($green, .5);
+      color: $slate-light;
     }
   }
 }

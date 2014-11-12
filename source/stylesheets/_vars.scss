@@ -5,9 +5,11 @@ $ms-ratio: $golden;
 $border-radius: ms(-3);
 
 // Colors
-$brown: darken(#522D06, 4%);
+$brown: darken(#522D06, 8%);
 $red: #C44D58;
 $slate: #556270;
+// $slate-light: rgba($slate, .6);
+$slate-light: lighten($slate, 24%);
 $green: darken(#3ea99c, 15%);
 
 // Breakpoints

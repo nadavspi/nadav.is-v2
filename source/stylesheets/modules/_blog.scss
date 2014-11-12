@@ -76,6 +76,7 @@ time {
   margin-top: .25em;
   @include whitney-sc;
   font-size: .9rem;
+  color: $slate;
 
   @media (min-width: 40em) {
     margin-top: 0;
