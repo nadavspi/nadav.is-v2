@@ -5,20 +5,37 @@
 }
 
 @mixin farnham {
-  font-family: "Farnham Text", Georgia;
+  font-family: "Farnham Text", "Times New Roman", Times, serif;
 }
 
 @mixin farnham-display {
-  font-family: "Farnham Display", Georgia;
+  font-family: "Farnham Display", "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: bold;
 }
 
 @mixin whitney {
-  font-family: 'Whitney SSm A', 'Whitney SSm B';
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+
+  .wf-whitneyssma-n4-active & {
+    font-family: 'Whitney SSm A', 'Whitney SSm B', 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
 }
 
 @mixin whitney-sc {
-  font-family: 'Whitney SSm Small Caps A', 'Whitney SSm Small Caps B';
+  padding-top: .3em;
+  font-family: 'Helvetia Neue', Helvetica, sans-serif;
   font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  .wf-whitneyssmsmallcapsa-n5-active & {
+    padding-top: 0;
+    font-family: 'Whitney SSm Small Caps A', 'Whitney SSm Small Caps B', 'Helvetica Neue', Helvetica, sans-serif;
+    letter-spacing: 0;
+  }
 }
