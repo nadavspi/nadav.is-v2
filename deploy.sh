@@ -1,1 +1,1 @@
-middleman build && cp -r fonts build
+middleman build && cp -r copy-to-build/* build
