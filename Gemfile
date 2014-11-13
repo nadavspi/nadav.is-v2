@@ -9,6 +9,7 @@ gem 'nokogiri'
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
 gem 'middleman-autoprefixer'
+gem "middleman-imageoptim", "~> 0.1.4"
 gem "redcarpet"
 
 gem "modular-scale"
