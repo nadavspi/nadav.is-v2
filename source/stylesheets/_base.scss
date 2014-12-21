@@ -227,6 +227,7 @@ nav {
   display: none;
   margin-bottom: 1rem;
   font-style: italic;
+  text-align: right;
   clear: both;
 
   @include bp($medium) {
@@ -234,7 +235,6 @@ nav {
     margin-left: ms(2);
     margin-bottom: ms(1);
     float: right;
-    text-align: right;
   }
 
   ul {
