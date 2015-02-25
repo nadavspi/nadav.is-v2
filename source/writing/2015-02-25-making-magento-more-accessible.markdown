@@ -43,7 +43,7 @@ All of this comes from Heydon, and it's wonderful. Let's contrast it with the wa
 
 <script src="https://gist.github.com/nadavspi/4a2e22235ad166a777e5.js"></script>
 
-So, `toggleSingle()` relies in classes to show/hide stuff. When the script is executed, the content gets a `.no-display` class which sets it to `display: none`. I think there's even an `!important` in there. When you click the title, the class is toggled. Simple enough.
+So, `toggleSingle()` relies on classes to show/hide stuff. When the script is executed, the content gets a `.no-display` class which sets it to `display: none`. I think there's even an `!important` in there. When you click the title, the class is toggled. Simple enough.
 
 Let's add the ARIA attributes. Starting with the click event:
 
