@@ -290,6 +290,7 @@ button[aria-controls="navigation"] {
 }
 
 .home-link {
+  @extend %content-container;
   display: none;
   position: absolute;
   top: 0;
@@ -299,7 +300,7 @@ button[aria-controls="navigation"] {
   opacity: 0;
   transition: opacity .5s;
 
-  @include bp($medium) {
+  @include bp($well) {
     display: block;
   }
 
