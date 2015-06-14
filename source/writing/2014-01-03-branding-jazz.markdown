@@ -12,12 +12,12 @@ There are lots of photos in [this article about the refresh on the Pentagram blo
 
 <div class="wide">
 <figure>
-    <img src="branding-jazz/jalc.jpg" alt="Print material for JALC">
+    <img src="2014-01-03-branding-jazz/jalc.jpg" alt="Print material for JALC">
     <figcaption>Print pieces designed by Luis Bravo and his team at Jazz at Lincoln Center.</figcaption>
 </figure>
 </div>
 <figure>
-    <img src="branding-jazz/jalc-typeface.jpg" alt="JALC's Jelly Roll Roman">
+    <img src="2014-01-03-branding-jazz/jalc-typeface.jpg" alt="JALC's Jelly Roll Roman">
     <figcaption>The Jelly Roll typeface, based on Neutraface 2.</figcaption>
 </figure>
 

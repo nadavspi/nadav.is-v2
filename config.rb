@@ -67,7 +67,7 @@ configure :build do
   activate :imageoptim
 
   # Enable cache buster
-  # activate :asset_hash
+  activate :asset_hash
 
   # Use relative URLs
   # activate :relative_assets

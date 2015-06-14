@@ -11,14 +11,14 @@ Album covers are a perfect example of design within constraints: some names, a f
 It's a trip to look through the catalog and see how many of the classic albums were designed by Reid Miles. They are as cool and interesting as the music, and an inseparable part of the experience.
 
 <div class="featured">
-    <figure class="half"><img src="reid-miles-blue-note-album-covers/nichols.jpg" style="max-height: 430px;"></figure>
-    <figure class="half"><img src="reid-miles-blue-note-album-covers/clarkCrib.jpg" style="max-height: 430px;"></figure>
-    <figure class="half"><img src="reid-miles-blue-note-album-covers/hendersonInOut.jpg" style="max-height: 430px;"></figure>
-    <figure class="half"><img src="reid-miles-blue-note-album-covers/SomethinElse.jpg" style="max-height: 430px;"></figure>
-    <figure class="half"><img src="reid-miles-blue-note-album-covers/blakeyMoanin.jpg" style="max-height: 430px;"></figure>
-    <figure class="half"><img src="reid-miles-blue-note-album-covers/coltraneBlueTrain.jpg" style="max-height: 430px;"></figure>
-    <figure class="half"><img src="reid-miles-blue-note-album-covers/morganLeeWay.jpg" style="max-height: 430px;"></figure>
-    <figure class="half"><img src="reid-miles-blue-note-album-covers/dorhamUnaMas.jpg" style="max-height: 430px;"></figure>
+    <figure class="half"><img src="2014-03-26-reid-miles-blue-note-album-covers/nichols.jpg" style="max-height: 430px;"></figure>
+    <figure class="half"><img src="2014-03-26-reid-miles-blue-note-album-covers/clarkCrib.jpg" style="max-height: 430px;"></figure>
+    <figure class="half"><img src="2014-03-26-reid-miles-blue-note-album-covers/hendersonInOut.jpg" style="max-height: 430px;"></figure>
+    <figure class="half"><img src="2014-03-26-reid-miles-blue-note-album-covers/SomethinElse.jpg" style="max-height: 430px;"></figure>
+    <figure class="half"><img src="2014-03-26-reid-miles-blue-note-album-covers/blakeyMoanin.jpg" style="max-height: 430px;"></figure>
+    <figure class="half"><img src="2014-03-26-reid-miles-blue-note-album-covers/coltraneBlueTrain.jpg" style="max-height: 430px;"></figure>
+    <figure class="half"><img src="2014-03-26-reid-miles-blue-note-album-covers/morganLeeWay.jpg" style="max-height: 430px;"></figure>
+    <figure class="half"><img src="2014-03-26-reid-miles-blue-note-album-covers/dorhamUnaMas.jpg" style="max-height: 430px;"></figure>
 </div>
 
 For more, see the [Birka Jazz Archive][birka], [Hard Format](http://www.hardformat.org/designers/reid-miles2/), [Vintage Vanguard](http://www.gokudo.co.jp/Record/BlueNote3/nnblue2.html), and [this interesting article on Reid Miles by Alexander Ross Charchar](http://retinart.net/artist-profiles/jazzy-blue-notes-reid-miles/).

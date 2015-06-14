@@ -37,7 +37,7 @@ listen to it. Lots of great tracks, but two for checking out Charlie Haden are
 Charlie's playing on *Science Fiction* from 1971 is ridiculously good. I especially like "Street Woman", "School Work", and "Law Years".
 
 <figure>
-    <img src="charlie-haden/Change_of_the_Century.jpg" alt="">
+    <img src="2014-07-11-charlie-haden/Change_of_the_Century.jpg" alt="">
     <figcaption>
         <em>Change of the Century</em>, recorded 1959
     </figcaption>
@@ -53,7 +53,7 @@ improvisation, and the resolution leading up to 3:30 is an example of
 Charlie's giant ears.
 
 <figure>
-    <img src=charlie-haden/bop-be.jpg alt="">
+    <img src=2014-07-11-charlie-haden/bop-be.jpg alt="">
     <figcaption>
         <em>Bop-Be</em>, recorded 1976
     </figcaption>
@@ -67,7 +67,7 @@ together. I've not heard them all, but I like *Etudes*. It has a great version o
 Haden's "Silence", which was also recorded on *Bop-Be*.
 
 <figure>
-    <img src=charlie-haden/etudes.jpg alt="">
+    <img src=2014-07-11-charlie-haden/etudes.jpg alt="">
     <figcaption>
         <em>Etudes</em>, recorded 1987
     </figcaption>
@@ -80,7 +80,7 @@ All ballads, recorded live. I play something from Charlie's solo on "Body And So
 I play the song.
 
 <figure>
-    <img src=charlie-haden/night-and-the-city.jpg alt="">
+    <img src=2014-07-11-charlie-haden/night-and-the-city.jpg alt="">
     <figcaption>
         <em>Night And The City</em>, recorded 1996
     </figcaption>
