@@ -17,9 +17,22 @@
     margin-top: ms(5);
     margin-bottom: 0;
     font-size: ms(-1);
+    font-style: italic;
+    text-align: right;
+
+    @include bp($medium) {
+      float: right;
+      margin-left: ms(2);
+      margin-bottom: ms(1);
+    }
+
     a {
-      @media (min-width: $medium) {
-        & + a {
+      display: inline-block;
+
+      & + a {
+        margin-top: ms(-2);
+
+        @media (min-width: $medium) {
           margin-left: ms(-2);
         }
       }

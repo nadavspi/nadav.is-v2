@@ -21,11 +21,6 @@ html {
     line-height: 1.5;
     border-width: ms(4);
   }
-
-  // @include bp($well-done) {
-  //   font-size: 34px;
-  //   line-height: 1.6;
-  // }
 }
 
 body {
@@ -67,10 +62,6 @@ button {
 main {
   clear: both;
   @extend %content-container;
-
-  @include bp($medium) {
-    clear: none;
-  }
 }
 
 
@@ -224,17 +215,12 @@ blockquote {
 }
 
 nav {
-  display: none;
-  margin-bottom: 1rem;
+  @extend %clearfix;
+  margin-bottom: ms(1);
   font-style: italic;
-  text-align: right;
-  clear: both;
 
   @include bp($medium) {
-    display: block;
-    margin-left: ms(2);
-    margin-bottom: ms(1);
-    float: right;
+    margin-bottom: ms(3);
   }
 
   ul {
@@ -243,12 +229,21 @@ nav {
     list-style-type: none;
   }
 
-  a {
-    display: inline-block;
-    margin-bottom: 1em;
+  li {
+    float: left;
+    width: 40%;
+    margin-right: 10%;
+    margin-bottom: ms(-3);
 
     @include bp($medium) {
-      margin-bottom: ms(-2);
+      display: inline-block;
+      width: auto;
+      margin-right: 0;
+      margin-bottom: 0;
+
+      & + li {
+        margin-left: ms(2);
+      }
     }
   }
 
@@ -256,8 +251,10 @@ nav {
     color: $green;
   }
 
-  &:focus {
-    outline: 0;
+  body > & {
+    a {
+      border-bottom: 0;
+    }
   }
 }
 
