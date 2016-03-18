@@ -13,7 +13,7 @@ blog: reading
     <% page_articles.each_with_index do |article, i| %>
       <li>
           <% link_to article do %>
-              <img src="/reading/images/<%= article.data.cover %>" alt="<%= article.title %>">
+              <img class="lazyload" data-src="/reading/images/<%= article.data.cover %>" alt="<%= article.title %>">
           <% end %>
       </li>
     <% end %>
