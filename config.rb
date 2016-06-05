@@ -11,6 +11,8 @@ activate :autoprefixer do |config|
 end
 activate :directory_indexes
 
+redirect "projects.html", to: "working.html"
+
 # Change Compass configuration
 # compass_config do |config|
 #   config.output_style = :compact
