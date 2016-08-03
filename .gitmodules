@@ -1,0 +1,3 @@
+[submodule "copy-to-build/sassy"]
+	path = copy-to-build/sassy
+	url = https://github.com/nadavspi/intro_to_sass
