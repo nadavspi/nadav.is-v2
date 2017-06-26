@@ -18,5 +18,5 @@ for importing the contents of a directory.
 * ``:norm @q`` — execute macro on selected lines
 
 <div class="featured">
-  <iframe name='quickcast' src='http://quick.as/embed/dby9flaz' scrolling='no' frameborder='0' width='100%' allowfullscreen></iframe><script src='http://quick.as/embed/script/0.87'></script>
+  <iframe name='quickcast' src='//quick.as/embed/dby9flaz' scrolling='no' frameborder='0' width='100%' allowfullscreen></iframe><script src='//quick.as/embed/script/0.87'></script>
 </div>
