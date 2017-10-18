@@ -1,0 +1,19 @@
+// Modular scale
+$ms-base: 1rem 2.6rem;
+$ms-ratio: $golden;
+// @debug ms-list(-10, 10, $ms-base, $ms-ratio);
+$border-radius: ms(-3);
+
+// Colors
+$brown: darken(#522D06, 8%);
+$red: #C44D58;
+$slate: #556270;
+// $slate-light: rgba($slate, .6);
+$slate-light: lighten($slate, 24%);
+$green: darken(#3ea99c, 15%);
+
+// Breakpoints
+$rare: 40em;
+$medium: 50em;
+$well: 70em;
+$well-done: 100em;

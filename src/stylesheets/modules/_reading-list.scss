@@ -1,0 +1,121 @@
+.reading-list {
+  ol {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    margin-bottom: ms(-2);
+    width: calc(50% - 1rem);
+    margin-right: 1rem;
+
+    @include bp($medium) {
+      width: calc(33.33% - 1rem);
+    }
+
+
+    @include bp($well) {
+      width: calc(25% - 1rem);
+    }
+  }
+
+  a {
+    border-bottom: 0;
+  }
+}
+
+.book {
+  margin-top: 0;
+
+  &__header {
+    &::after {
+      content: '';
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      @extend hr;
+
+      @include bp($well) {
+        display: none;
+      }
+    }
+
+    @include bp($well) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    figure {
+      display: none;
+
+      @include bp($well) {
+        display: block;
+        flex: 1;
+        margin: 0;
+        margin-left: ms(1);
+        text-align: left;
+      }
+    }
+
+    > dl {
+      color: $slate;
+
+      @include bp($well) {
+        flex: 2;
+      }
+    }
+
+    dl {
+      line-height: 1.2;
+    }
+
+    dt {
+      @include whitney-sc;
+      font-size: .57rem;
+      color: $slate-light;
+
+      .wf-whitneyssmsmallcapsa-n5-active & {
+        font-size: .7rem;
+        text-transform: lowercase;
+      }
+    }
+
+    dd {
+      margin-left: 0;
+      margin-bottom: 1rem;
+      font-style: italic;
+      // don't use old school numberals, use discretionary ligatures
+      font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 0, "dlig" 1;
+    }
+
+    a {
+      border-bottom: 0;
+    }
+  }
+
+  h3 {
+    margin-bottom: 1rem;
+  }
+
+  blockquote {
+    position: relative;
+    margin-top: ms(3);
+    margin-left: ms(3);
+    color: inherit;
+
+    &::before {
+      @include farnham;
+      position: absolute;
+      top: -.25em;
+      left: -.5em;
+      content: '\201c';
+      font-size: ms(1);
+      color: $slate-light;
+    }
+  }
+}

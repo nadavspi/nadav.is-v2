@@ -1,0 +1,111 @@
+.notice {
+  @extend %content-container;
+  padding: ms(-2);
+  @include whitney;
+  font-size: .7rem;
+  border: 4px solid $green;
+  border-radius: $border-radius;
+
+  @media (min-width: $medium) {
+    border-width: 6px;
+  }
+}
+
+.post {
+  &__nav {
+    display: block;
+    margin-top: ms(5);
+    margin-bottom: 0;
+    font-size: ms(-1);
+    font-style: italic;
+    text-align: right;
+
+    @include bp($medium) {
+      float: right;
+      margin-left: ms(2);
+      margin-bottom: ms(1);
+    }
+
+    a {
+      display: inline-block;
+
+      & + a {
+        margin-top: ms(-2);
+
+        @media (min-width: $medium) {
+          margin-left: ms(-2);
+        }
+      }
+    }
+  }
+
+  &__header {
+    h1 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.fitvids {
+  @media (min-width: 70em) {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}
+
+.archive {
+  font-size: ms(1);
+
+  ol {
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li {
+    margin-bottom: ms(1);
+  }
+}
+
+.featured {
+  @extend %clearfix;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+figure {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  @extend %content-container;
+  text-align: center;
+}
+
+figcaption {
+  @include whitney;
+  color: $slate;
+
+  @media (min-width: 40em) {
+    font-size: .8rem;
+  }
+}
+
+time {
+  display: block;
+  margin-top: .25em;
+  @include whitney-sc;
+  font-size: .7rem;
+  color: $slate;
+
+  .wf-whitneyssmsmallcapsa-n5-active & {
+    font-size: .9rem;
+    text-transform: none;
+  }
+
+  @media (min-width: 40em) {
+    margin-top: 0;
+  }
+}
+
+.footnotes {
+  @include whitney;
+  font-size: .7em;
+}
