@@ -1,5 +1,6 @@
 ---
 title: Ten Jazz albums you should have
+date: 2013-12-25
 tags: Music
 ---
 
