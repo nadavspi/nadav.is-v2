@@ -23,5 +23,5 @@ collections:
         widget: list
         required: false
         fields:
-          - { name: body, label: Body, widget: text }
+          - { name: highlight, label: Highlight, widget: text }
       - { name: body, label: Body, widget: markdown, required: false }
