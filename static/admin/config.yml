@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: nadavspi/nadav.is
+  branch: v3.0.0
 
 media_folder: static/assets
 public_folder: assets
