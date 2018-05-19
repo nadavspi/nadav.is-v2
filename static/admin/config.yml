@@ -12,7 +12,16 @@ collections:
     folder: books
     create: true
     fields:
-      - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+      - { name: publication, label: Year of publication, widget: string }
+      - { name: rating, label: Rating, widget: string }
+      - { name: link, label: Link, widget: string, required: false }
+      - { name: cover, label: Cover, widget: image, required: false }
+      - name: highlights
+        label: Highlights
+        widget: list
+        required: false
+        fields:
+          - { name: body, label: Body, widget: text }
+      - { name: body, label: Body, widget: markdown, required: false }
