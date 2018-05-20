@@ -12,6 +12,7 @@ collections:
     folder: src/pages/reading
     create: true
     fields:
+      - { name: type, label: Type, widget: hidden, default: book }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: publication, label: Year of publication }
