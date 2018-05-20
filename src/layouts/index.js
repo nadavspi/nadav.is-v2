@@ -10,7 +10,7 @@ export default ({ children }) => (
       <h1 className="visuallyhidden">Site navigation</h1>
       <ul>
         <li><Link to="/writing">Writing</Link>{' '}</li>
-        <li><Link to="/test">Test</Link></li>
+        <li><Link to="/reading">Reading</Link></li>
       </ul>
     </nav>
     <main role="main" id="main">
