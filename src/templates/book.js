@@ -49,10 +49,7 @@ export const query = graphql`
         reading
         rating
         link
-        highlights {
-          id
-          highlight
-        }
+        highlights 
       }
     }
   }
