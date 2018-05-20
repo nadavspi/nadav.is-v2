@@ -9,7 +9,7 @@ public_folder: assets
 collections:
   - name: Books
     label: Book
-    folder: books
+    folder: src/pages/reading
     create: true
     fields:
       - { name: date, label: Date, widget: date }
