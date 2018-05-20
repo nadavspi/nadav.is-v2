@@ -9,5 +9,5 @@ link: http://www.amazon.com/dp/0316777730
 cover: naked.jpg
 date: 2010-12-28
 highlights:
-- "Every now and then someone will offer some little bit of information that suddenly changes everything. I asked how many cats they had, and Roberta pulled out a pencil and notepad."
+  - text: "Every now and then someone will offer some little bit of information that suddenly changes everything. I asked how many cats they had, and Roberta pulled out a pencil and notepad."
 ---

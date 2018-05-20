@@ -33,7 +33,7 @@ const Highlights = ({ highlights }) => (
   <article>
     <h2>Choice Highlights</h2>
     {highlights.map(highlight => (
-      <blockquote key={highlight.substring(0, 15)}>{highlight}</blockquote>
+      <blockquote key={highlight.text.substring(0, 10)}>{highlight.text}</blockquote>
     ))}
   </article>
 );
@@ -49,7 +49,9 @@ export const query = graphql`
         reading
         rating
         link
-        highlights 
+        highlights {
+          text
+        }
       }
     }
   }

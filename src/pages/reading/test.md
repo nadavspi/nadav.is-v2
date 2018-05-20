@@ -1,11 +1,12 @@
 ---
 date: '2018-05-19'
 title: Test
-publication: '2002'
+publication: 2003
+type: book
 rating: Amazing
 link: amazon.com
 highlights:
-  - highlight: highlight 1
-  - highlight: highlight 2
+  - text: 2highlight:w
+  - text: highlight 2
 ---
 
