@@ -1,0 +1,29 @@
+backend:
+  name: github
+  repo: nadavspi/nadav.is
+  branch: netlify-cms
+
+media_folder: source/reading/images
+public_folder: /reading/images
+
+collections:
+  - name: Books
+    label: Book
+    folder: source/reading
+    create: true
+    fields:
+      - { name: type, label: Type, widget: hidden, default: book }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: publication, label: Year of publication }
+      - { name: reading, label: When I read it, widget: string }
+      - { name: rating, label: Rating, widget: string }
+      - { name: link, label: Link, widget: string, required: false }
+      - { name: cover, label: Cover, widget: image, required: false }
+      - name: highlights
+        label: Highlights
+        widget: list
+        required: false
+        fields:
+          - { name: text, label: Text, widget: text }
+      - { name: body, label: Body, widget: markdown, required: false }
