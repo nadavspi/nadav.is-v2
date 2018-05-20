@@ -14,7 +14,8 @@ collections:
     fields:
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
-      - { name: publication, label: Year of publication, widget: string }
+      - { name: publication, label: Year of publication }
+      - { name: reading, label: When I read it, widget: string }
       - { name: rating, label: Rating, widget: string }
       - { name: link, label: Link, widget: string, required: false }
       - { name: cover, label: Cover, widget: image, required: false }
