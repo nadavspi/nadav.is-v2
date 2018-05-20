@@ -13,7 +13,7 @@ export default ({ data }) => {
       <section className="archive">
         <h1 className="visuallyhidden">Archive</h1>
         <ol>
-          {data.allMarkdownRemark.edges.map(({ node }) =>
+          {data.allMarkdownRemark.edges.filter(edge => !edge.node.frontmatter.type).map(({ node }) =>
             <li className="archive__post" key={node.id}>
               <Link to={node.fields.slug}>
                   {node.frontmatter.title}{" "}
@@ -35,6 +35,7 @@ export const query = graphql`
         node {
           id
           frontmatter {
+            type
             title
             date(formatString: "MMMM DD, YYYY")
           }

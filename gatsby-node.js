@@ -15,6 +15,15 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
+
+  const getTemplate = node => {
+    if (node.frontmatter.type === 'book') {
+      return path.resolve(`./src/templates/book.js`);
+    }
+
+    return path.resolve(`./src/templates/blog-post.js`);
+  };
+
   return new Promise((resolve, reject) => {
     graphql(`
       {
@@ -24,6 +33,9 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
               fields {
                 slug
               }
+              frontmatter {
+                type
+              }
             }
           }
         }
@@ -32,7 +44,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       result.data.allMarkdownRemark.edges.map(({ node }) => {
         createPage({
           path: node.fields.slug,
-          component: path.resolve(`./src/templates/blog-post.js`),
+          component: getTemplate(node),
           context: {
             // Data passed to context is available in page queries as GraphQL variables.
             slug: node.fields.slug,
