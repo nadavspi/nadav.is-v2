@@ -99,13 +99,34 @@ shot comes.[^3] You take a second to celebrate if you think you got
 it, or curse if you think you didn’t, and keep walking. 
 
 <div class="featured">
-    <figure class="half"><img src="2018-12-01-shooting-film-for-a-year/1.jpg" alt=""></figure>
-    <figure class="half"><img src="2018-12-01-shooting-film-for-a-year/2.jpg" alt=""></figure>
-    <figure class="half"><img src="2018-12-01-shooting-film-for-a-year/3.jpg" alt=""></figure>
-    <figure class="half"><img src="2018-12-01-shooting-film-for-a-year/4.jpg" alt=""></figure>
-    <figure class="half"><img src="2018-12-01-shooting-film-for-a-year/5.jpg" alt=""></figure>
-    <figure class="half"><img src="2018-12-01-shooting-film-for-a-year/6.jpg" alt=""></figure>
-    <figure class="half"><img src="2018-12-01-shooting-film-for-a-year/7.jpg" alt=""></figure>
+  <figure class="half">
+    <img src="2018-12-01-shooting-film-for-a-year/1.jpg" alt="">
+    <figcaption>First roll developed at home, December 2017</figcaption>
+  </figure>
+  <figure class="half">
+    <img src="2018-12-01-shooting-film-for-a-year/2.jpg" alt="">
+    <figcaption>January 2018</figcaption>
+  </figure>
+  <figure class="half">
+    <img src="2018-12-01-shooting-film-for-a-year/3.jpg" alt="">
+    <figcaption>A rare color shot, March 2018</figcaption>
+  </figure>
+  <figure class="half">
+    <img src="2018-12-01-shooting-film-for-a-year/4.jpg" alt="">
+    <figcaption>April 2018</figcaption>
+  </figure>
+  <figure class="half">
+    <img src="2018-12-01-shooting-film-for-a-year/5.jpg" alt="">
+    <figcaption>Hong Kong, June 2018</figcaption>
+  </figure>
+  <figure class="half">
+    <img src="2018-12-01-shooting-film-for-a-year/6.jpg" alt="">
+    <figcaption>July 2018</figcaption>
+  </figure>
+  <figure class="half">
+    <img src="2018-12-01-shooting-film-for-a-year/7.jpg" alt="">
+    <figcaption>October 2018</figcaption>
+  </figure>
 </div>
 
 [^1]: Out of my 250 rolls, maybe ten were in color, the rest in black and white.
