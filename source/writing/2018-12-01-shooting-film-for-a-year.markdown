@@ -4,7 +4,7 @@ date: 2018-12-01
 tags: Photography
 ---
 Photography has become my creative practice and obsession over the last year
-and a half. For the past year, It’s been a year since I started shooting
+and a half. It’s been a year since I started shooting
 film. I shot my first roll some time in November, and started developing at
 home in December 2017. I’m scanning my 250th roll today. I sold my digital
 camera a few months ago when I realized that I had only used it three times in
